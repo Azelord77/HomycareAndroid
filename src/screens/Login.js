@@ -69,7 +69,9 @@ class Login extends Component {
 					<Text>Masuk</Text>
 					</TouchableOpacity>
 				</View> */}
-        <LogoHomy />
+        <View style={styles.logohomy}>
+          <LogoHomy />
+        </View>
         <Text style={styles.nameHead}>Email</Text>
         <View style={styles.inputView}>
           <TextInput
@@ -103,9 +105,9 @@ class Login extends Component {
 
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('SignUp')}>
-          <Text>
+          <Text style={styles.SignupText}>
             Belum punya akun?
-            <Text style={styles.loginText}>&nbsp;Daftar Disini</Text>
+            <Text>&nbsp;Daftar Disini</Text>
           </Text>
         </TouchableOpacity>
       </View>
@@ -116,21 +118,25 @@ class Login extends Component {
 const styles = StyleSheet.create({
   nameHead: {
     color: '#000',
+    lineHeight: 36,
   },
   container: {
     flex: 1,
     backgroundColor: '#E5E5E5',
+    height: height,
+    width: width,
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
   },
   logohomy: {
-    height: '155px',
-    width: '153px',
-    left: '111px',
-    top: '139px',
+    height: 155,
+    width: 153,
+    left: 1,
+    top: 1,
     borderRadius: 0,
     blend: 'passthrough',
+    paddingBottom: 200,
   },
   logo: {
     fontWeight: 'bold',
@@ -139,7 +145,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   inputView: {
-    width: '80%',
+    width: 335,
     backgroundColor: '#fff',
     borderRadius: 25,
     height: 50,
@@ -152,13 +158,19 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   loginText: {
-    color: '#000',
+    color: '#fff',
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+  },
+  SignupText: {
+    color: '#a9a9a9',
     justifyContent: 'center',
     textAlign: 'center',
     alignItems: 'center',
   },
   forgot: {
-    color: '#000000',
+    color: '#a9a9a9',
     justifyContent: 'center',
     fontSize: 11,
     textAlign: 'center',
