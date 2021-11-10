@@ -148,8 +148,8 @@ const styles = StyleSheet.create({
     width: 335,
     backgroundColor: '#fff',
     borderRadius: 25,
-    height: 50,
-    marginBottom: 20,
+    height: 42,
+    marginBottom: 10,
     justifyContent: 'center',
     padding: 20,
   },
@@ -176,8 +176,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   loginBtn: {
-    width: '80%',
-    height: 50,
+    width: 335,
+    height: 35,
     backgroundColor: '#00ADFF',
     borderRadius: 30, //lengkungan
     textAlign: 'center',

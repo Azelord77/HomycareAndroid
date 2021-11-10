@@ -1,28 +1,7 @@
 import React, {Component} from 'react';
-import {
-  Text,
-  View,
-  StatusBar,
-  Image,
-  TouchableOpacity,
-  Switch,
-  TextInput,
-  ScrollView,
-  StyleSheet,
-  Button,
-  FlatList,
-  Alert,
-  ToastAndroid,
-  BackHandler,
-  PermissionsAndroid,
-  ActivityIndicator,
-  Dimensions,
-  Linking,
-  RefreshControl,
-  ImageBackground,
-} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 
-class Home extends Component {
+class Account extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -30,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <View>
-        <Text style={{fontSize: 20}}>Home</Text>
+        <Text style={{fontSize: 20}}>Akun</Text>
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('Home')}>
           <Text>Halaman Utama</Text>
@@ -56,4 +35,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Account;
